@@ -9,7 +9,6 @@ const Header = () => {
                 <meta name="og:description" content="We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."/>
                 <meta name="og:image" content="./public/Logo.svg"/>
             </head>
-            <img src="./Logo.svg" alt="logo" />
         </header>
     );
 }

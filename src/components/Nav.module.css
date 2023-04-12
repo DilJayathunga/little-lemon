@@ -1,0 +1,26 @@
+nav {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 2;
+}
+
+img {
+    display: flex;
+}
+
+.navElements {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-grow: 2;*/
+    margin-top: 2.5rem;
+}
+
+.navElements li {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 1rem;
+}

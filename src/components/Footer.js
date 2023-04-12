@@ -1,10 +1,11 @@
+import styles from "./Footer.module.css";
 
 const Footer = () => {
     return (
         <footer>
-            <div style={{display: 'flex'}}>
+            <div className={styles.footer}>
                 <img src="./Logo.svg" alt="logo" />
-                <div>
+                <div className={styles.section}>
                     <h4>Doormat Navigation</h4>
                     <ul>
                         <li>
@@ -27,7 +28,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div className={styles.section}>
                     <h4>Contact</h4>
                     <ul>
                         <li>
@@ -41,14 +42,14 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div className={styles.section}>
                     <h4>Social Media Links</h4>
                     <ul>
                         <li>
-                            <a>Address</a>
+                            <a>Facebook</a>
                         </li>
                         <li>
-                            <a>Phone Number</a>
+                            <a>Twitter</a>
                         </li>
                         <li>
                             <a>Email</a>
