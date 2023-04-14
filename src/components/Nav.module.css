@@ -1,13 +1,19 @@
 nav {
-    margin: 1rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-grow: 2;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
-img {
+.container {
+    justify-content: right;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-flow: row;
+}
+
+.container img {
     display: flex;
+    justify-content: right;
+    margin: 2rem 0;
 }
 
 .navElements {
@@ -15,6 +21,7 @@ img {
     /*justify-content: center;*/
     /*flex-grow: 2;*/
     margin-top: 2.5rem;
+    margin-left: 50px;
 }
 
 .navElements li {
@@ -22,5 +29,14 @@ img {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    padding-left: 1rem;
+    padding-left: 30px;
+}
+
+.element {
+    text-decoration: none;
+    color: #333333;
+}
+
+.element:active {
+    color: #F4CE14;
 }

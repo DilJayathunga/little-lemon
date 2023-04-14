@@ -4,30 +4,39 @@ h1 {
     font-weight: 500;
     font-size: 64px;
     color: #F4CE14;
+    margin: 30px 0;
 }
 
 h2 {
     font-family: "Markazi Text", serif;
     font-size: 40px;
+    color: #EDEFEE;
+    margin: 10px 0;
 }
 
 h6 {
-    font-family: "Karla", serif;
+    font-family: "Karla", "Work Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 p {
-    font-family: "Karla", serif;
+    font-family: "Karla", "Work Sans";
     font-size: 16px;
 }
 
 button {
-    font-family: "Karla", serif;
+    font-family: "Karla", "Work Sans";
     font-size: 18px;
     border-radius: 15px;
     background-color: #F4CE14;
+    height: 60px;
+    padding: 0 60px;
+    border: 0;
+    margin: 20px 0;
+    color: #333333;
 }
 
 ul {
@@ -35,7 +44,7 @@ ul {
 }
 
 li {
-    font-family: 'Karla', serif;
+    font-family: 'Karla', "Work Sans";
     font-style: normal;
 }
 

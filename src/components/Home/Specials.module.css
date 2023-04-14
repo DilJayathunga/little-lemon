@@ -1,0 +1,82 @@
+.specialsContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-auto-flow: column;
+    width: 100%;
+    margin: 100px 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h2 {
+    color: #333333;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #EDEFEE;
+    margin: 20px;
+}
+
+.card:nth-child(1) {
+    margin-left: 0;
+}
+
+.card:nth-child(3) {
+    margin-right: 0;
+}
+
+.card img {
+    width: 310px;
+    height: 180px;
+    margin: 0;
+}
+
+.description {
+    padding: 20px;
+}
+
+.topic {
+    padding-left: 0;
+}
+
+.price {
+    font-family: "Karla", "Work Sans";
+    font-size: 16px;
+    color: #B90B0B;
+    float: right;
+    margin-top: -30px;
+}
+
+.details {
+    height: 100px;
+    letter-spacing: 1.3px;
+    line-height: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.orderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderContainer img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.description p {
+    color: #495E57;
+}

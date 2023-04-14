@@ -3,10 +3,11 @@ import styles from "./Footer.module.css";
 const Footer = () => {
     return (
         <footer>
+            <div></div>
             <div className={styles.footer}>
-                <img src="./Logo.svg" alt="logo" />
+                <img src="./logo.svg" alt="logo" />
                 <div className={styles.section}>
-                    <h4>Doormat Navigation</h4>
+                    <h6>Doormat Navigation</h6>
                     <ul>
                         <li>
                             <a>Home</a>
@@ -29,7 +30,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className={styles.section}>
-                    <h4>Contact</h4>
+                    <h6>Contact</h6>
                     <ul>
                         <li>
                             <a>Address</a>
@@ -43,7 +44,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className={styles.section}>
-                    <h4>Social Media Links</h4>
+                    <h6>Social Media Links</h6>
                     <ul>
                         <li>
                             <a>Facebook</a>
@@ -57,6 +58,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+            <div></div>
         </footer>
     );
 }
