@@ -15,7 +15,7 @@ h2 {
 }
 
 h6 {
-    font-family: "Karla", "Work Sans";
+    font-family: "Karla", "Work Sans", serif, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
@@ -23,12 +23,12 @@ h6 {
 }
 
 p {
-    font-family: "Karla", "Work Sans";
+    font-family: "Karla", "Work Sans", serif;
     font-size: 16px;
 }
 
 button {
-    font-family: "Karla", "Work Sans";
+    font-family: "Karla", "Work Sans", serif;
     font-size: 18px;
     border-radius: 15px;
     background-color: #F4CE14;
@@ -44,14 +44,6 @@ ul {
 }
 
 li {
-    font-family: 'Karla', "Work Sans";
+    font-family: 'Karla', "Work Sans", serif;
     font-style: normal;
-}
-
-footer {
-    background-color: #D9D9D9;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-grow: 2;
 }
