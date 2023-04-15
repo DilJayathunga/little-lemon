@@ -7,7 +7,7 @@ const Nav = () => {
         <nav>
             <div></div>
             <div className={styles.container}>
-                <img src="./logo.svg" alt="logo" />
+                <Link to="/" className={styles.element}><img src="./logo.svg" alt="logo" /></Link>
                 <ul className={styles.navElements}>
                     <li>
                         <Link to="/" className={styles.element}>Home</Link>

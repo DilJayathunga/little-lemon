@@ -14,6 +14,14 @@ h2 {
     margin: 10px 0;
 }
 
+label {
+    font-family: "Karla", "Work Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
 h6 {
     font-family: "Karla", "Work Sans", serif, serif;
     font-size: 18px;
@@ -37,6 +45,15 @@ button {
     border: 0;
     margin: 20px 0;
     color: #333333;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FBDABB;
+}
+
+button:active {
+    background-color: #EE9972;
 }
 
 ul {

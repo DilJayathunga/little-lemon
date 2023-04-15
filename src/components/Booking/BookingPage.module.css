@@ -1,0 +1,55 @@
+.bookingContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+
+@media (max-width: 700px) {
+    .headContainer {
+        background-color: #495E57;
+        display: grid;
+        grid-auto-flow: row;
+        margin-bottom: 50px;
+    }
+
+    .titleText {
+        padding-left: 18px;
+        padding-bottom: 20px;
+    }
+
+    .reservationImgA {
+        display: none;
+    }
+}
+
+@media (min-width: 701px) {
+    .headContainer {
+        background-color: #495E57;
+        height: 430px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        margin-bottom: 50px;
+        grid-auto-flow: column;
+    }
+
+    .reservationImgA {
+        width: 400px;
+        height: 300px;
+        margin-top: 60px;
+        float: right;
+    }
+
+    .titleText{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: -30px 0 0 0;
+    }
+}
+
+.bookingContainer h2 {
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
