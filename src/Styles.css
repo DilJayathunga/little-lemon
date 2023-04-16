@@ -56,6 +56,10 @@ button:active {
     background-color: #EE9972;
 }
 
+button:disabled {
+    background-color: #FBDABB;
+}
+
 ul {
     list-style: none;
 }

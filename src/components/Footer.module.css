@@ -15,8 +15,9 @@ footer {
         margin: 0;
     }
 
-    .footer img {
+    .footerLogo {
         margin: 2rem;
+        height: 150px;
     }
 }
 
@@ -32,8 +33,9 @@ footer {
         margin: 2rem 1rem;
     }
 
-    .footer img {
+    .footerLogo {
         margin: 3rem 0;
+        height: 150px;
     }
 }
 

@@ -30,3 +30,11 @@ select {
     border-radius: 5px;
     border-width: 2px;
 }
+
+input:focus:invalid {
+    border-color: #B90B0B;
+}
+
+input:active{
+    border-color: #F4CE14;
+}

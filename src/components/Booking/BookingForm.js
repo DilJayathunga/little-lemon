@@ -1,13 +1,17 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import styles from "./BookingForm.module.css";
 
 const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
 
     const [date, setDate] = useState("");
-    const [time, setTime] = useState("");
+    const [time, setTime] = useState("init");
     const [guests, setGuests] = useState(1);
-    const [occasion, setOccasion] = useState("");
+    const [occasion, setOccasion] = useState("init");
+
+    // useEffect(() => {
+    //
+    // }, [date, dispatch]);
 
     const onFormSubmit = (e) => {
         e.preventDefault();
@@ -19,6 +23,19 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
         }
         console.log('form data', data)
         submitForm(data)
+        setDate("")
+        setTime("init")
+        setGuests(1)
+        setOccasion("init")
+    }
+
+    const getIsFormValid = () => {
+        return (
+            date &&
+            time !== 'init' &&
+            occasion !== 'init' &&
+            guests <= 10 && guests >=1
+        )
     }
 
     return (
@@ -31,14 +48,16 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
                     id="res-date"
                     value={date}
                     onChange={(e) => {
-                        setDate(e.target.value)
-                        dispatch({ type: "GET TIMES", date: e.target.value })
+                        setDate(e.target.value);
+                        () => dispatch({ type: "GET TIMES", date: date })
                     }}
+                    required
                 />
             </div>
             <div className={styles.formItem}>
                 <label htmlFor="res-time">Choose time</label>
-                <select aria-label="time" id="res-time " value={time} onChange={e => setTime(e.target.value)}>
+                <select aria-label="time" required id="res-time " value={time} onChange={e => setTime(e.target.value)}>
+                    <option value="init" disabled>Select a time</option>
                     {availableTimes?.map(time => (
                         <option key={time} value={time}>{time}</option>
                     ))}
@@ -55,17 +74,19 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
                     id="guests"
                     value={guests}
                     onChange={e => setGuests(e.target.value)}
+                    required
                 />
             </div>
             <div className={styles.formItem}>
                 <label htmlFor="occasion">Occasion</label>
-                <select aria-label="occasion" id="occasion" value={occasion} onChange={e => setOccasion(e.target.value)}>
+                <select aria-label="occasion" required id="occasion" value={occasion} onChange={e => setOccasion(e.target.value)}>
+                    <option value="init" disabled>Select an occasion</option>
                     <option value="Birthday">Birthday</option>
                     <option value="Anniversary">Anniversary</option>
                 </select>
             </div>
             <div className={styles.formItem}>
-                <button type="submit">Make Your reservation</button>
+                <button disabled={!getIsFormValid()} type="submit">Make Your reservation</button>
             </div>
         </form>
     );
