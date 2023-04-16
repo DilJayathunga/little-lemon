@@ -41,7 +41,7 @@ const CustomersSay = () => {
                 <div className={styles.testimonials}>
                     {data.map((item) => {
                         return (
-                            <div className={styles.reviewCard}>
+                            <div key={item.id} className={styles.reviewCard}>
                                 <div className={styles.user}>
                                     <img className={styles.avatar} src={item.avatar} alt={item.name}/>
                                     <h6>{item.name}</h6>

@@ -37,7 +37,7 @@ const Specials = () => {
                 <div className={styles.cardsContainer}>
                     {data.map((item) => {
                         return (
-                            <div className={styles.card}>
+                            <div key={item.id} className={styles.card}>
                                 <img src={item.image} alt={item.topic}/>
                                     <div className={styles.description}>
                                     <div>

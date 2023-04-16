@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import styles from "./BookingForm.module.css";
 
-const BookingForm = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
 
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
@@ -18,6 +18,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
             occasion: occasion
         }
         console.log('form data', data)
+        submitForm(data)
     }
 
     return (
@@ -31,7 +32,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
                     value={date}
                     onChange={(e) => {
                         setDate(e.target.value)
-                        dispatch(e.target.value)
+                        dispatch({ type: "GET TIMES", date: e.target.value })
                     }}
                 />
             </div>

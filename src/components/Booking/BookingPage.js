@@ -3,7 +3,7 @@ import React from 'react';
 import styles from "./BookingPage.module.css";
 import BookingForm from "./BookingForm";
 
-const BookingPage = ({ availableTimes, dispatch }) => {
+const BookingPage = ({ availableTimes, dispatch, submitForm }) => {
     return (
         <>
             <div className={styles.headContainer}>
@@ -21,7 +21,7 @@ const BookingPage = ({ availableTimes, dispatch }) => {
                 <div></div>
                 <div>
                     <h2>Find a table for any occasion</h2>
-                    <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+                    <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
                 </div>
                 <div></div>
             </div>
