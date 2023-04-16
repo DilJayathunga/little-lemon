@@ -1,5 +1,5 @@
 import React from 'react';
-
+import delivery from "../../../public/delivery.svg"
 import styles from "./Specials.module.css";
 
 const data = [
@@ -32,7 +32,7 @@ const Specials = () => {
             <div>
                 <div className={styles.heading}>
                     <h2>This weeks specials!</h2>
-                    <button>Online Menu</button>
+                    <button aria-label="On Click">Online Menu</button>
                 </div>
                 <div className={styles.cardsContainer}>
                     {data.map((item) => {
@@ -47,7 +47,7 @@ const Specials = () => {
                                     <p className={styles.details}>{item.description}</p>
                                     <div className={styles.orderContainer}>
                                         <p><a>Order a delivery</a></p>
-                                        <img src="./delivery.svg" alt="delivery" />
+                                        <img src={delivery} alt="delivery" />
                                     </div>
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 
 import styles from "./BookingForm.module.css";
 
@@ -8,10 +8,6 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
     const [time, setTime] = useState("init");
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("init");
-
-    // useEffect(() => {
-    //
-    // }, [date, dispatch]);
 
     const onFormSubmit = (e) => {
         e.preventDefault();
@@ -49,7 +45,8 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
                     value={date}
                     onChange={(e) => {
                         setDate(e.target.value);
-                        () => dispatch({ type: "GET TIMES", date: date })
+                        // () => dispatch({ type: "GET TIMES", date: date }) // this code is to make the unit test success
+                        dispatch({ type: "GET TIMES", date: date })
                     }}
                     required
                 />
@@ -86,7 +83,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
                 </select>
             </div>
             <div className={styles.formItem}>
-                <button disabled={!getIsFormValid()} type="submit">Make Your reservation</button>
+                <button aria-label="On Click" disabled={!getIsFormValid()} type="submit">Make Your reservation</button>
             </div>
         </form>
     );
