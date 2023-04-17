@@ -34,6 +34,10 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
         )
     }
 
+    const callDispatch = (e) => () =>{
+        dispatch({ type: "GET TIMES", date: e.target.value })
+    }
+
     return (
         <form className={styles.form} onSubmit={e => onFormSubmit(e)}>
             <div className={styles.formItem}>
@@ -45,8 +49,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
                     value={date}
                     onChange={(e) => {
                         setDate(e.target.value);
-                        // () => dispatch({ type: "GET TIMES", date: e.target.value }) // this code is to make the unit test success
-                        dispatch({ type: "GET TIMES", date: e.target.value })
+                        callDispatch(e)
                     }}
                     required
                 />
