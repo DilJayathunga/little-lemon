@@ -1,38 +1,93 @@
-nav {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-}
-
-/*.container {*/
-/*    !*justify-content: right;*!*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 2fr;*/
-/*    grid-auto-flow: row;*/
-/*}*/
 
 @media (max-width: 700px) {
-    .container {
+    nav {
         display: grid;
-        grid-auto-flow: row;
-        width: 100%;
+        margin: 0 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
 
     .navElements {
         display: none;
+
+    }
+
+    .navElementsMenu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navElementsMenu li {
+        padding: 20px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .menu {
+        width: 50px;
+    }
+
+    .modal {
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modalContent {
+        background-color: #fefefe;
+        right: 0;
+        top: 0;
+        height: fit-content;
+        margin-left: auto;
+        border: 1px solid #888;
+        width: 60%;
     }
 }
 
 @media (min-width: 701px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-auto-flow: column;
     }
 
-    .navElements {
+    .navElementsMenu, .navElements {
         display: flex;
         justify-content: flex-end;
         margin-top: 2.5rem;
+    }
+
+    .navElements li, .navElementsMenu li {
+         display: inline-block;
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 21px;
+         padding-left: 30px;
+     }
+
+    .menu {
+        display: none !important;
+    }
+
+    .modal {
+        display: none;
     }
 }
 
@@ -40,14 +95,6 @@ nav {
     display: flex;
     justify-content: right;
     margin: 2rem 0;
-}
-
-.navElements li {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    padding-left: 30px;
 }
 
 .element {

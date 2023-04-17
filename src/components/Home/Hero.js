@@ -1,5 +1,4 @@
 import React from 'react';
-import hero from "../../../public/hero.jpg"
 import styles from "./Hero.module.css";
 import {useNavigate} from "react-router-dom";
 
@@ -16,7 +15,7 @@ const Hero = () => {
                 <button aria-label="On Click" onClick={() => navigate("/booking")}>Reserve a Table</button>
             </div>
             <div>
-                <img className={styles.heroImg} src={hero} alt="hero" />
+                <img className={styles.heroImg} src="/hero.jpg" alt="hero" />
             </div>
             <div></div>
         </div>

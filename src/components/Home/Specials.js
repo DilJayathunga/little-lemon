@@ -1,5 +1,4 @@
 import React from 'react';
-import delivery from "../../../public/delivery.svg"
 import styles from "./Specials.module.css";
 
 const data = [
@@ -47,7 +46,7 @@ const Specials = () => {
                                     <p className={styles.details}>{item.description}</p>
                                     <div className={styles.orderContainer}>
                                         <p><a>Order a delivery</a></p>
-                                        <img src={delivery} alt="delivery" />
+                                        <img src="/delivery.svg" alt="delivery" />
                                     </div>
                                 </div>
                             </div>
