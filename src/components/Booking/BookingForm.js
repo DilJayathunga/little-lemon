@@ -45,8 +45,8 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
                     value={date}
                     onChange={(e) => {
                         setDate(e.target.value);
-                        // () => dispatch({ type: "GET TIMES", date: date }) // this code is to make the unit test success
-                        dispatch({ type: "GET TIMES", date: date })
+                        // () => dispatch({ type: "GET TIMES", date: e.target.value }) // this code is to make the unit test success
+                        dispatch({ type: "GET TIMES", date: e.target.value })
                     }}
                     required
                 />
@@ -63,7 +63,6 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
             <div className={styles.formItem}>
                 <label htmlFor="guests">Number of guests</label>
                 <input
-                    aria-label="guests"
                     type="number"
                     placeholder="1"
                     min="1"
@@ -71,6 +70,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
                     id="guests"
                     value={guests}
                     onChange={e => setGuests(e.target.value)}
+                    aria-label="guests"
                     required
                 />
             </div>

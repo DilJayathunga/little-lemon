@@ -8,13 +8,13 @@ const Hero = () => {
     return (
         <div className={styles.heroContainer}>
             <div></div>
-            <div>
+            <div className={styles.content}>
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                 <button aria-label="On Click" onClick={() => navigate("/booking")}>Reserve a Table</button>
             </div>
-            <div>
+            <div className={styles.content}>
                 <img className={styles.heroImg} src="/hero.jpg" alt="hero" />
             </div>
             <div></div>

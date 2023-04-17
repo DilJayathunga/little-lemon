@@ -12,9 +12,14 @@
         margin-bottom: 50px;
     }
 
+    .content {
+        padding-top: 100px;
+    }
+
     .titleText {
         padding-left: 18px;
         padding-bottom: 20px;
+        padding-top: 100px;
     }
 
     .reservationImgA {
@@ -25,11 +30,15 @@
 @media (min-width: 701px) {
     .headContainer {
         background-color: #495E57;
-        height: 430px;
+        height: 530px;
         display: grid;
         grid-template-columns: 1fr 2fr 2fr 1fr;
         margin-bottom: 50px;
         grid-auto-flow: column;
+    }
+
+    .content {
+        padding-top: 100px;
     }
 
     .reservationImgA {
@@ -44,6 +53,7 @@
         justify-content: center;
         flex-direction: column;
         margin: -30px 0 0 0;
+        padding-top: 100px;
     }
 }
 

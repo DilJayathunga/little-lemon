@@ -2,7 +2,14 @@
 @media (max-width: 700px) {
     nav {
         display: grid;
-        margin: 0 20px;
+        padding: 0 20px;
+        /*translate-y: 0;*/
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        position: fixed;
+        background-color: white;
+        width: 100%;
     }
 
     .container {
@@ -31,6 +38,7 @@
 
     .menu {
         width: 50px;
+        padding-right: 40px;
     }
 
     .modal {
@@ -60,6 +68,13 @@
     nav {
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
+        /*translate-y: 0;*/
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        position: fixed;
+        background-color: white;
+        width: 100%;
     }
 
     .container {

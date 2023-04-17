@@ -35,6 +35,10 @@ input:focus:invalid {
     border-color: #B90B0B;
 }
 
-input:active{
+input:active {
     border-color: #F4CE14;
+}
+
+select option:hover {
+    background-color: #FBDABB;
 }

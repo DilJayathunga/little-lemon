@@ -8,6 +8,10 @@
         height: fit-content;
     }
 
+    .content {
+        padding-top: 100px;
+    }
+
     .heroImg {
         display: none;
     }
@@ -16,10 +20,14 @@
 @media (min-width: 701px) {
     .heroContainer {
         background-color: #495E57;
-        height: 430px;
+        height: 530px;
         display: grid;
         grid-template-columns: 1fr 2fr 2fr 1fr;
         grid-auto-flow: column;
+    }
+
+    .content {
+        padding-top: 100px;
     }
 
     .heroImg {

@@ -12,8 +12,8 @@ const BookingPage = ({ availableTimes, dispatch, submitForm }) => {
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
                 </div>
-                <div>
-                    <img className={styles.reservationImgA} src="./restaurant.jpg" alt="reservationA" />
+                <div className={styles.content}>
+                    <img className={styles.reservationImgA} src="/restaurant.jpg" alt="reservationA" />
                 </div>
                 <div></div>
             </div>
