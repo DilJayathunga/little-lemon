@@ -1,7 +1,7 @@
 {
   "name": "little-lemon",
   "version": "0.1.0",
-  "homepage": "https://little-lemon.github.io/",
+  "homepage": "https://DilJayathunga.github.io/little-lemon",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
